@@ -1,0 +1,41 @@
+NYC Parking Violations Data Analysis 
+Descripcion:
+This project analyzes this data set https://www.kaggle.com/datasets/davinascimento/nyc-parking-violations-issued/data
+this data set has information about parking violations issued in New York.The goal of the lab is to explore, clean and analyze the information inside the data set.
+
+Dataset Content
+Summons Number: Unique identifier for the violation.
+Issue Date: Date the violation was issued.
+Violation Code: Code representing the type of violation.
+Vehicle Body Type: Type of the vehicle involved.
+Vehicle Make: Manufacturer of the vehicle.
+Violation Location: Location where the violation occurred.
+Violation Description: Detailed description of the violation.
+Fine Amount: Fine amount (in USD).
+Analysis:
+1.Exploration and cleaning of the dataset
+-This is the notebook named main where I analized the data set and cleaned all the nan values because in my aproach of the analisis didnt make sense to keep all the data, also y cleaned it for processing efficency.
+-For the same reason that the data was still too big I decided to only use the top 20 brands and top 15 violation code because it was impossible for my computer to work with such data.
+Analisis
+-I analized if there where relationshios between data such as pearson pvalue, spearman pvalue and chi square pvalue
+-In main_ny notebook I answered some questions I found interesting for a deeper analisis(this in tables_and calculations notebook)
+
+-In SQL I finished answering the rest of the questions selecting the information I wanted to chart, also here I used a sample of 500 hundred of the data set because of efficiency at uploading the data set to SQL.
+
+Results 
+I only deply analized 3 questions which are :
+-Is there relationship Month-Violation?
+Pearson Value: 0.08
+The low correlation value indicates a weak linear relationship between the Month and Violation.The correlation is almost 0 which means the month does not strongly influence the violation code.
+Spearman Value: 0.16
+The Spearman is higher, showing a weak positive relationship. However, the correlation is still low, This indicatesa weak relationship between the month and violation codes.
+-Is there relationship Day-Violation?
+Pearson Value: -0.25
+The negative value suggests a weak inverse relationship between the Day of the Week and the Violation Code. This means that if one variable increases, the other tends to decrease.
+Spearman Value: -0.18
+The Spearman correlation also shows a weak negative relationship between the Day of the Week and the Violation Code. This confirms that the relationship between these two variables is weak, and the variables do not not strongly correlate with the violation code.
+-Is there relationship Street-Violation?
+Chi-Square p-value: 0.0
+The p-value indicates a statistically significant relationship between the two categorical variables. This result suggests that the variables are not independent and are strongly associated with each other. 
+
+Ken Igarashi Galindo.
